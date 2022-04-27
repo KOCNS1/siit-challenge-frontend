@@ -27,6 +27,15 @@ export const getUsersOfService = async (service_id) => {
 export const getServicesByIds = async (service_ids) => {
   const { data } = await axios.get(API_URL + '/services.json');
   const services = data.filter((service) => service_ids.includes(service.id));
-  console.log(services);
   return services;
+};
+
+// Get the price of a service
+export const getPrice = async (
+  flat_cost,
+  cost_per_user,
+  users_using,
+  users_included
+) => {
+  return flat_cost + cost_per_user * (users_using - users_included);
 };
