@@ -13,8 +13,6 @@
     "@babel/preset-env": "7.10.3",
     "@babel/preset-react": "7.10.1",
     "@babel/runtime": "^7.17.9",
-    "@headlessui/react": "^1.6.0",
-    "@heroicons/react": "^1.0.6",
     "autoprefixer": "^9",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
