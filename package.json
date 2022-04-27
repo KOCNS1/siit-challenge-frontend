@@ -12,10 +12,12 @@
   "dependencies": {
     "@babel/preset-env": "7.10.3",
     "@babel/preset-react": "7.10.1",
+    "@babel/runtime": "^7.17.9",
     "@headlessui/react": "^1.6.0",
     "@heroicons/react": "^1.0.6",
     "autoprefixer": "^9",
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "parcel": "1.12.4",
     "postcss": "^7",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "parcel-bundler": "^1.12.4"
   }
 }

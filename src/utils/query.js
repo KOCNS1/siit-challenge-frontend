@@ -4,14 +4,15 @@ const API_URL = 'http://localhost:3001';
 
 //Get all the users
 export const getUsers = async () => {
-  const res = await axios.get(API_URL + '/users.json');
-  return res.data;
+  console.log('test');
+  const { data } = await axios.get(API_URL + '/users.json');
+  return data;
 };
 
 // Get all the services
 export const getServices = async () => {
-  const res = await axios.get(API_URL + '/services.json');
-  return res.data;
+  const { data } = await axios.get(API_URL + '/services.json');
+  return data;
 };
 
 // Get the users of a Service

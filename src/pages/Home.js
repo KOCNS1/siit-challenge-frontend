@@ -1,6 +1,14 @@
 import React from 'react';
+import { useQuery } from 'react-query';
+import { getUsers } from '../utils/query';
 
 const Home = () => {
+  const { isLoading, isError, data, error, isSuccess } = useQuery(
+    'users',
+    getUsers
+  );
+
+  console.log(data);
   return (
     <div>
       <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
