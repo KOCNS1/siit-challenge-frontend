@@ -10,9 +10,10 @@ const queryClient = new QueryClient();
 export default function App() {
   return (
     <>
-      <Navbar />
       <QueryClientProvider client={queryClient}>
         <Router>
+          <Navbar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/users" element={<Home />} />
