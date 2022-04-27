@@ -24,7 +24,7 @@ const User = ({ avatar_url, name, position, service_ids }) => {
             return (
               <div
                 key={service.id}
-                className="flex justify-center gap-5 border border-siit max-w-max bg-siit text-white p-1 rounded-lg gap-2 items-center shadow-lg shadow-siit mr-3 mb-3"
+                className="flex justify-center gap-5 border border-siit max-w-max bg-siit text-white p-1 rounded-lg items-center shadow-lg shadow-siit mr-3 mb-3"
               >
                 <p>{service.name}</p>
                 <img src={service.logo_url} className="h-5 w-5"></img>
